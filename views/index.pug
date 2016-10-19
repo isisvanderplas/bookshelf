@@ -1,26 +1,102 @@
-
-html
+doctype html
+html.no-js(lang='en')
 	head
-		title bookshelf
-		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		title Bookshelf
+		meta(name='description', content='My book website')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(type="text/css" rel="stylesheet" href='/css/bootstrap.min.css')
-		link(type="text/css" rel="stylesheet" href='/css/stylesheet.css')
+		link(type="text/css" rel="stylesheet" href='/css/main.css')
 	body
-		.container-fluid
-			include navbar.pug
+		include navbar.pug
 
+		div.container
 			.row
-				.col-xs-4
-					img(class="img-responsive", src="img/1984.png")
-				.col-xs-4
-					img(class="img-responsive", src="img/the-kiterunner.png")
-				.col-xs-4
-					img(class="img-responsive", src="img/to-kill-a-mockingbird.png")
+				
+				.col-sm-6.col-md-4
+					.thumbnail
+						a(target='_blank', href='/books/1984')
+							img(alt='', src='/img/1984.png')
+						.caption
+							h3 1984
+							h4 George Orwell
 
-			.row
-				col-xs-4
-					h3 1984, George Orwell
-				col-xs-4
-					h3 the kiterunner, Khaled Hosseini
-				col-xs-4
-					h3 to kill a mockingbird, Harper Lee
+				.col-sm-6.col-md-4
+					.thumbnail
+						a(target='_blank', href='/books/the-kiterunner')
+							img(alt='', src='/img/the-kiterunner.png')
+						.caption
+							h3 the Kiterunner
+							h4 Khaled Hosseini
+
+				.col-sm-6.col-md-4
+					.thumbnail
+						a(target='_blank', href='/books/to-kill-a-mockingbird')
+							img(alt='', src='/img/to-kill-a-mockingbird.png')
+						.caption
+							h3 to kill a mockingbird
+							h4 Harper Lee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-
+//- html
+//- 	head
+//- 		title bookshelf
+//- 		link(type="text/css" rel="stylesheet" href='/css/bootstrap.min.css')
+//- 	//- link(type="text/css" rel="stylesheet" href='/css/stylesheet.css')
+//- body
+//- 	.container-fluid
+//- 		include navbar.pug
+
+	//-
+	//- .row
+	//- 	.col-sm-6.col-md-4
+	//- 		.thumbnail
+	//- 			img(src='../img/1984.png', alt='1984 by George Orwell')
+	//- 				.caption
+	//- 					h3  1984
+	//- 					p George Orwell
+	//- 						a.btn.btn-primary(href='#', role='button') info
+
+
+
+		//- .row
+		//- 	.col-xs-4
+		//- 		img(class="img-responsive", src="img/1984.png")
+		//- 	.col-xs-4
+		//- 		img(class="img-responsive", src="img/the-kiterunner.png")
+		//- 	.col-xs-4
+		//- 		img(class="img-responsive", src="img/to-kill-a-mockingbird.png")
+		//-
+		//- .row
+		//- 	col-xs-4
+		//- 		h3 1984, George Orwell
+		//- 	col-xs-4
+		//- 		h3 the kiterunner, Khaled Hosseini
+		//- 	col-xs-4
+		//- 		h3 to kill a mockingbird, Harper Lee
