@@ -2,10 +2,6 @@ var express = require('express');
 var pug = require('pug');
 var app = express();
 
-var express = require('express');
-var pug = require('pug');
-var app = express();
-
 app.set('views', './views');
 app.set('view engine', 'pug');
 
